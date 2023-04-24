@@ -1,0 +1,269 @@
+// // // Q1 solution
+function sum(arr) {
+  var total = 0; //this var will store total of sum numbers.
+  for (var i = 0; i < arr.length; i++) {
+    // iterating over the array
+
+    if (arr[i] >= 0) {
+      //conditional statement to check if number is positive
+      //Add the positive numbers to the total variable
+      total = total + arr[i];
+      console.log(arr[i]);
+    }
+  }
+  return total;
+}
+
+var anArray = [1, -2, 3, 5];
+var anArray2 = [-1, -2, -5];
+console.log(sum(anArray));
+console.log(sum(anArray2));
+
+              /////// // Q2-solution
+
+function returnNegative(num) {
+  //abs = absolute value -> makes number positive
+  // make negative with `-`
+  return -Math.abs(num);
+}
+console.log(returnNegative(-1)); //output is -1.
+
+function returnNegative(num) {
+  //This function takes a number as an argument and returns its negative value
+  return -num;
+}
+
+console.log(returnNegative(1)); // Output: -1
+
+function returnNegative(num) {
+  return -Math.abs(num);
+}
+
+console.log(returnNegative(10)); // Output: -10
+
+function returnNegative(num) {
+  return -Math.abs(num);
+}
+
+console.log(returnNegative(-0)); //zero is neither positive nor negative thats why I am getting  0 answers in  console.
+
+function returnNegative(num) {
+  return -Math.abs(num); // abs = absolute value -> makes number positive
+}
+
+console.log(returnNegative(0.33)); //when we call the function with
+// // the argument 0.33, it returns -0.33, which is the negative value of 0.33
+
+                        ///// // //Q3 solution
+
+//  // // #
+function findOpposite(num) {
+  //findOpposite function that takes a num argument and returns its opposite by using the - operator.
+  return -num;
+}
+
+console.log(findOpposite(-1)); // Output: 1
+// //#
+function findOpposite(num) {
+  return -num; //This function works for both positive and negative integers and floating-point numbers.
+}
+
+console.log(findOpposite(14)); // Output: -14
+
+// // #
+function findOpposite(num) {
+  return -num;
+}
+
+console.log(findOpposite(-34)); // Output: 34
+
+                         /// // // Q4 solution
+
+function countTrue(arr) {
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    //it's looping  through each element of the array using a for loop.
+    if (arr[i] === true) {
+      count++;
+    }
+  }
+  return count; //return the count variable as the output of the function.
+}
+
+console.log(
+  countTrue([
+    true,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    true,
+    false,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+  ])
+);
+Output: 17;
+
+//#
+function countTrue(arr) {
+  //passing the new input array [true, false, true, false, false] as an argument to the countTrue function.
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === true) {
+      count++;
+    }
+  }
+  return count;
+}
+
+console.log(countTrue([true, false, true, false, false])); // The output of the function for this input array is 2.
+
+//// #
+
+// function countTrue(booleans) {
+//   return booleans.reduce((accumulated, next) => {
+//     if (next === true) {
+//       // increment the accumulated value by 1 if the bool is `true`
+//       return accumulated + 1;
+//     }
+//     // if `false`, then don't increment the value
+//     return accumulated;
+//   }, 0 /* the initial value */);
+// }
+// const bools = [
+//   true,
+//   true,
+//   true,
+//   false,
+//   true,
+//   true,
+//   true,
+//   true,
+//   true,
+//   false,
+//   true,
+//   false,
+//   true,
+//   false,
+//   false,
+//   true,
+//   true,
+//   true,
+//   true,
+//   true,
+//   false,
+//   false,
+//   true,
+//   true,
+// ];
+
+// const result = countTrue(bools);
+// console.log(result); // The correct answer for example1 above would be 17.
+// // all solutions tested in console.log and they come out with output.
+/// ##
+
+//   function countTrue(booleans) { ////returns the number of true values in an array of booleans.
+//     return booleans.reduce((accumulated, next) => {
+//       if (next === true) {
+
+//         return accumulated + 1;
+//       }
+//       // if `false`, then don't increment the value
+//       return accumulated;
+//     }, 0 /* the initial value */);
+//   }
+
+//   const bools = [
+//     true, true, false,
+//   ];
+
+//   const result = countTrue(bools);// output is 2.
+
+//   console.log(result);
+
+/// // // q5 solution
+//// This function is called findWord
+var findWord = ["hay", "junk", "hay", "something", "nothing"]; // It takes in a parameter called words
+
+var theHay = findWord.indexOf("hay");
+console.log(theHay); //given 0 in console.
+// we have two hays. it returned the first it found which is 0.
+
+var findWord = ["hay", "junk", "hay", "something", "nothing"];
+for (var i = 0; i < findWord.length; i++) {
+  //It uses a for loop to iterate over the elements in the words array
+  //     if (words[i] === "hay") {
+  document.write("found the word at position " + [0]);
+}
+console.log(); //The string "found the word at position " + [0]" " shows up in the browser.
+
+// // // // Q6 solution
+
+function countVowels(str) {
+  const vowels = ["a", "e", "i", "o", "u"]; //a countVowels function that takes a str argument and initializes a vowels array with all the vowels.
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    //initialize a count variable to 0 and loop through each character of the input string using a for loop.
+    if (vowels.includes(str[i].toLowerCase())) {
+      count++;
+    }
+  }
+  return count;
+}
+
+console.log(countVowels("Hello there.")); // Output: 4
+console.log(countVowels("Good Morning")); // Output: 4
+console.log(countVowels("Vader is a very good doggo")); // Output: 9
+
+function getVowelsCount(str) {
+  //splits the vowels string into an array => ['a','e','i','o','u','A'...]
+  let arr_vowel_list = "aeiouAEIOU".split("");
+
+  let count = 0;
+
+  str.split("").forEach(function (e) {
+    if (arr_vowel_list.indexOf(e) !== -1) {
+      count++;
+    }
+  });
+
+  console.log(count);
+}
+
+
+
+// output is =>9. tested in console.log
+
+                       // // // q7 solution
+
+// function that returns square of its digits pieced together
+function squareOfDigits(num) {
+  // convert string to array
+  let splitArray = String(num).split("");
+  let txt = "";
+  // concatenate square of each digit to txt
+  splitArray.forEach(function (c) {
+    txt = txt + c * c;
+  });
+  // return the final answer after the forEach loop
+  return txt;
+}
+
+// lets run it and test it
+console.log(squareOfDigits(772));
